@@ -4,10 +4,26 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: "roboto" ,Arial,sans-serif;
 }
 
 header{
 text-align: center;
-font-family: 'Shrikhand', cursive;
+font-family: 'Shrikhand',sans-serif;
 box-shadow: 0px 1px 1px 1px #80808045;
+position: relative;
+}
+
+header h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+.ville{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    gap: 3%;
+    font-size: larger;
 }
