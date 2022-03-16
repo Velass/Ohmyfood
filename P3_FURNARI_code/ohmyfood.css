@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "roboto", Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  font-family: "Shrikhand", sans-serif;
+  box-shadow: 0px 1px 1px 1px #80808045;
+  position: relative;
+}
+
+header h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.ville {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000014;
+  font-size: larger;
+}
+
+.ville p {
+  margin-left: 15px;
+}
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #80808012;
+  padding-bottom: 10%;
+}
+
+.explorer h2 {
+  width: 70%;
+  margin-bottom: 0px;
+}
+
+.explorer p {
+  width: 95%;
+}
+
+.explorer button:hover {
+  opacity: 0.85;
+  box-shadow: 5px 5px 5px #00000054;
+}
+
+.explorer button {
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), #ff79da);
+  padding: 15px;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 5px 5px 5px #00000017;
+  border: none;
+  font-size: medium;
+}
+
+.fonctionnementsite h2 {
+  margin-left: 5%;
+}
+
+/*# sourceMappingURL=ohmyfood.css.map */
