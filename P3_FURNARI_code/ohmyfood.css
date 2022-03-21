@@ -6,6 +6,11 @@ body {
   font-family: "roboto", Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   text-align: center;
   font-family: "Shrikhand", sans-serif;
@@ -25,7 +30,6 @@ header h1 {
   background-color: #00000014;
   font-size: larger;
 }
-
 .ville p {
   margin-left: 15px;
 }
@@ -39,21 +43,13 @@ header h1 {
   background-color: #80808012;
   padding-bottom: 10%;
 }
-
 .explorer h2 {
   width: 70%;
   margin-bottom: 0px;
 }
-
 .explorer p {
   width: 95%;
 }
-
-.explorer button:hover {
-  opacity: 0.85;
-  box-shadow: 5px 5px 5px #00000054;
-}
-
 .explorer button {
   color: white;
   font-weight: bold;
@@ -64,9 +60,150 @@ header h1 {
   border: none;
   font-size: medium;
 }
+.explorer button:hover {
+  opacity: 0.85;
+  box-shadow: 5px 5px 5px #00000054;
+}
 
 .fonctionnementsite h2 {
   margin-left: 5%;
+}
+
+.conteneurvignette {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.vignette {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 85%;
+  background-color: #f6f6f6;
+  height: 80px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 4px #0000000d;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+.vignette p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356dc;
+  border-radius: 50%;
+  color: white;
+  margin: 0px 0px 0px -15px;
+  width: 30px;
+  height: 30px;
+}
+.vignette i {
+  margin: 0px 5% 0px 5%;
+  color: grey;
+}
+.vignette h3 {
+  opacity: 0.8;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 30px 0px 30px 0px;
+}
+.menu h2 {
+  margin-left: 5%;
+}
+
+.cartemenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  box-shadow: 2px 2px 2px 4px #0000000d;
+}
+.carte img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  height: 150px;
+  object-fit: cover;
+}
+.carte a {
+  width: 100%;
+  position: relative;
+}
+.carte .nouveau {
+  position: absolute;
+  right: 15px;
+  padding: 5px 15px;
+  top: 15px;
+  color: #008766;
+  background-color: #99e2d0;
+}
+
+.conteneurnote {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.conteneurnote .fa-heart {
+  font-size: x-large;
+}
+
+.note h3 {
+  margin: 10px 0px 0px 10px;
+}
+.note p {
+  margin: 5px 0px 5px 10px;
+}
+
+.pagefooter {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.pagefooter h3 {
+  margin-left: 15px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: larger;
+}
+.pagefooter .footer {
+  margin-left: 15px;
+}
+.pagefooter .proposer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.pagefooter .proposer p {
+  margin: 0px 0px 0px 10px;
+}
+.pagefooter .devenir {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pagefooter .devenir p {
+  margin: 0px 0px 0px 10px;
 }
 
 /*# sourceMappingURL=ohmyfood.css.map */
