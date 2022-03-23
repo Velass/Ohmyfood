@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+h1 {
+  font-family: "shrikhand", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+
+nav {
+  margin-left: 5%;
+}
+
+.photo img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.conteneurmenu {
+  background-color: #f6f6f6;
+  position: relative;
+  border-radius: 30px 30px 0px 0px;
+  padding-bottom: 10px;
+}
+.conteneurmenu .restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -30px;
+}
+.conteneurmenu .restaurant h2 {
+  font-family: "shrikhand", sans-serif;
+  width: 70%;
+  margin-left: -15px;
+}
+.conteneurmenu .fa-heart {
+  font-size: x-large;
+}
+.conteneurmenu .entrees {
+  margin-left: 15px;
+}
+.conteneurmenu .entrees h3 {
+  color: #0d090969;
+  font-size: medium;
+}
+
+.conteneurvignette .vignette {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 95%;
+  justify-content: space-between;
+  box-shadow: 1px 1px 1px 1px #80808045;
+  border-radius: 10px;
+}
+.conteneurvignette .vignette .note {
+  margin-left: 10px;
+}
+.conteneurvignette .vignette .note h4 {
+  margin: 10px 0px 2px 0px;
+  font-size: large;
+}
+.conteneurvignette .vignette .note p {
+  margin: 2% 0% 5% 0%;
+}
+.conteneurvignette .vignette .prix {
+  margin: 7% 5% 1% 0%;
+}
+
+.coeur {
+  position: relative;
+  height: 25px;
+  width: 30px;
+  clip-path: polygon(10% 30%, 12.2036485672% 20.8645038605%, 18.342300415% 13.7471637726%, 27.0508384705% 10.2159767151%, 36.4127159119% 11.0503139496%, 44.3553009033% 16.0743713379%, 49.1355781555% 24.165807724%, 50.3139419556% 26.4511260986%, 54.1091079712% 17.8541946411%, 61.4090843201% 11.9340372086%, 70.607635498% 10.0091276169%, 79.6715621948% 12.4898614883%, 86.599937439% 18.8410644531%, 89.8636779785% 27.6532478333%, 89.438949585% 37.1053962708%, 87.0573654175% 46.2735748291%, 83.115447998% 54.8918266296%, 77.994682312% 62.8705635071%, 72.0159225464% 70.2314071655%, 65.4133148193% 77.0403671265%, 58.3499450684% 83.3713607788%, 50.9385795593% 89.2917633057%, 43.4583091736% 84.8747558594%, 36.299747467% 78.6514816284%, 29.5699996948% 71.9677658081%, 23.4179058075% 64.7506103516%, 18.0579891205% 56.9297142029%, 13.7893915176% 48.4673080444%, 10.9856128693% 39.4180450439%, 10% 30%);
+}
+
+.coeur:hover .remplissage {
+  height: 100%;
+}
+
+.coeur i.far:nth-child(1) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: 3px;
+  margin-top: 0.5px;
+}
+
+.remplissage {
+  position: absolute;
+  bottom: 0px;
+  height: 0px;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), #ff79da);
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=menu.css.map */
