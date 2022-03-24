@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@keyframes tourne {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 h1 {
   font-family: "shrikhand", sans-serif;
 }
@@ -47,10 +55,10 @@ nav {
 .conteneurmenu .fa-heart {
   font-size: x-large;
 }
-.conteneurmenu .entrees {
+.conteneurmenu .menu {
   margin-left: 15px;
 }
-.conteneurmenu .entrees h3 {
+.conteneurmenu .menu h3 {
   color: #0d090969;
   font-size: medium;
 }
@@ -63,19 +71,50 @@ nav {
   justify-content: space-between;
   box-shadow: 1px 1px 1px 1px #80808045;
   border-radius: 10px;
+  overflow: hidden;
+}
+.conteneurvignette .vignette:hover .valide {
+  margin-right: 0px;
+}
+.conteneurvignette .vignette:hover .valide .confirmation i {
+  animation: tourne 1s ease;
 }
 .conteneurvignette .vignette .note {
   margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .conteneurvignette .vignette .note h4 {
   margin: 10px 0px 2px 0px;
   font-size: large;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .conteneurvignette .vignette .note p {
   margin: 2% 0% 5% 0%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.conteneurvignette .vignette .prix {
-  margin: 7% 5% 1% 0%;
+.conteneurvignette .vignette .valide {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  justify-content: space-between;
+  margin-right: -65px;
+  transition: 1s;
+}
+.conteneurvignette .vignette .valide .prix {
+  margin: 25% 0% 0% 0%;
+}
+.conteneurvignette .vignette .valide .confirmation {
+  padding: 23px 20px 23px 20px;
+  background-color: #99e2d0;
+  border-radius: 0px 10px 10px 0px;
+}
+.conteneurvignette .vignette .valide .confirmation .fa-check-circle {
+  font-size: x-large;
 }
 
 .coeur {

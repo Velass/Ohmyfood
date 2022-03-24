@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
+@keyframes tourne {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+  
+
 h1{
     font-family: "shrikhand" , sans-serif;
 }
@@ -56,7 +66,7 @@ nav{
         font-size: x-large;
     }
 
-    .entrees{
+    .menu{
         margin-left: 15px;
 
         h3{
@@ -78,26 +88,64 @@ nav{
         justify-content: space-between;
         box-shadow: 1px 1px 1px 1px #80808045;
         border-radius: 10px;
+        overflow: hidden;
+
+        &:hover .valide{
+            margin-right: 0px;
+
+            .confirmation i{
+                animation: tourne 1s ease;
+            }
+        }
 
         .note{
             margin-left: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             h4{
                 margin: 10px 0px 2px 0px; 
                 font-size: large;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
 
             }
 
             p{
                 margin: 2% 0% 5% 0%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
             }
 
 
 
         }
 
-        .prix{
-            margin: 7% 5% 1% 0%;
+        .valide{
+
+            display: flex;
+            align-items: center;
+            width: 35%;
+            justify-content: space-between;
+            margin-right: -65px;
+            transition: 1s;
+
+            .prix{
+                margin: 25% 0% 0% 0%;
+            }
+        
+            .confirmation{
+                padding: 23px 20px 23px 20px;
+                background-color: #99e2d0;
+                border-radius: 0px 10px 10px 0px;
+                
+                .fa-check-circle {
+                    font-size: x-large;
+                }
+                   
+            }
         }
     }
 }
@@ -129,4 +177,4 @@ nav{
     transition: 0.3s;
 }
 
-  
+
