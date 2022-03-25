@@ -12,6 +12,14 @@ h1 {
   font-family: "shrikhand", sans-serif;
 }
 
+h3 {
+  font-family: "roboto", Arial, sans-serif;
+}
+
+p {
+  font-family: "roboto", Arial, sans-serif;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -27,6 +35,10 @@ body {
 
 nav {
   margin-left: 5%;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .photo img {
@@ -59,8 +71,11 @@ nav {
   margin-left: 15px;
 }
 .conteneurmenu .menu h3 {
-  color: #0d090969;
+  color: #00000059;
   font-size: medium;
+  border-bottom: 2px solid #99e2d0;
+  width: 13%;
+  padding-bottom: 5px;
 }
 
 .conteneurvignette .vignette {
@@ -72,6 +87,7 @@ nav {
   box-shadow: 1px 1px 1px 1px #80808045;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 .conteneurvignette .vignette:hover .valide {
   margin-right: 0px;
@@ -107,6 +123,7 @@ nav {
 }
 .conteneurvignette .vignette .valide .prix {
   margin: 25% 0% 0% 0%;
+  font-weight: bold;
 }
 .conteneurvignette .vignette .valide .confirmation {
   padding: 23px 20px 23px 20px;
@@ -115,6 +132,61 @@ nav {
 }
 .conteneurvignette .vignette .valide .confirmation .fa-check-circle {
   font-size: x-large;
+  color: white;
+}
+
+.pagefooter {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.pagefooter h3 {
+  margin-left: 15px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: larger;
+}
+.pagefooter .footer {
+  margin-left: 15px;
+}
+.pagefooter .proposer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.pagefooter .proposer p {
+  margin: 0px 0px 0px 10px;
+}
+.pagefooter .devenir {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pagefooter .devenir p {
+  margin: 0px 0px 0px 10px;
+}
+
+.bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+.bouton button {
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), #ff79da);
+  padding: 15px 40px;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 5px 5px 5px #00000017;
+  border: none;
+  font-size: medium;
+}
+.bouton button:hover {
+  opacity: 0.85;
+  box-shadow: 5px 5px 5px #00000054;
 }
 
 .coeur {
