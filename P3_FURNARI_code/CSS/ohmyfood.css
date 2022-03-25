@@ -166,11 +166,6 @@ header h1 {
   font-size: x-large;
   color: black;
 }
-.conteneurnote i:hover::before {
-  transition: 3s;
-  color: red;
-  background-color: violet;
-}
 
 .note h3 {
   margin: 10px 0px 0px 10px;
