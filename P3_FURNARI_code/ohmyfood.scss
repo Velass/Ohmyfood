@@ -14,10 +14,33 @@ a{
 @keyframes visibiliter {
     0%{
         visibility: visible;
+        opacity: 0.9;
+        background-color: white;
     }
     100%{
         visibility: collapse;
+        opacity: 0.9;
+        background-color: white;
     }
+}
+
+@keyframes mouvement {
+    0%{
+        margin-left: 0%;
+    }
+    25%{
+        margin-left: 50%;
+    }
+    50%{
+        margin-left: 100%;
+    }
+    75%{
+        margin-left: 50%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+    
 }
 
 .chargement {
@@ -26,6 +49,7 @@ a{
     height: 100%;
     z-index: 1;
     visibility: collapse;
+    animation: visibiliter 3s ;
 
     .conteneurbulle {
         position: absolute;
@@ -36,12 +60,14 @@ a{
         width: 150px;
         height: 200px;
         left: 30%;
+        
 
         .bulle1 {
             width: 30px;
             height: 30px;
             background-color: #9356DC;
             border-radius: 50%;
+            animation: mouvement 3s linear 0s infinite alternate;
         }
         
         .bulle2 {
@@ -49,6 +75,7 @@ a{
             height: 30px;
             background-color: #FF79DA;
             border-radius: 50%;
+            animation: mouvement 3s linear 0.5s infinite alternate;
         }
 
         .bulle3 {
@@ -56,6 +83,7 @@ a{
             height: 30px;
             background-color: #99E2D0;
             border-radius: 50%;
+            animation: mouvement 3s linear 1s infinite alternate;
         }
             
     }
@@ -64,10 +92,10 @@ a{
    
 
 header{
-text-align: center;
-font-family: 'Shrikhand',sans-serif;
-box-shadow: 0px 1px 1px 1px #80808045;
-position: relative;
+    text-align: center;
+    font-family: 'Shrikhand',sans-serif;
+    box-shadow: 0px 1px 1px 1px #80808045;
+    position: relative;
 }
 
 header h1{
@@ -213,6 +241,10 @@ header h1{
     a{
         width: 100%;
         position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .nouveau{
@@ -300,7 +332,8 @@ header h1{
         height: 30px;
         margin-left: 3px;
         margin-top: 0.5px;
-       }
+        font-size: x-large;
+    }
        
 }
 
