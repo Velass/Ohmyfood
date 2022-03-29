@@ -12,11 +12,9 @@
 
 @keyframes apparition {
     0% {
-        
         opacity: 0;
     }
     100% {
-        transform: scale(1);
         opacity: 1;
     }
 }
@@ -79,6 +77,11 @@ p{
     font-family: 'roboto', Arial, sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'roboto', Arial, sans-serif;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -241,6 +244,13 @@ nav{
 
     .footer{
         margin-left: 15px; 
+
+        .footer a {
+            text-decoration: none;
+            color: inherit;
+            font-family: 'roboto', Arial, sans-serif;
+        }
+           
     }
 
     .proposer{
