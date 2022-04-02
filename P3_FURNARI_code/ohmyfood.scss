@@ -274,6 +274,7 @@ header h1{
 
     p{
         margin: 5px 0px 5px 10px;
+        font-weight: lighter;
     }
 
 }
@@ -350,4 +351,67 @@ header h1{
 
 .contour{
     background-color: none
+}
+
+@media (min-width: 801px){
+
+
+    .explorer {
+        padding-bottom: 3%;
+    }
+
+    .conteneurvignette {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 40px;
+        justify-content: space-evenly;
+
+        .vignette{
+            width: 30%;
+        }
+    }
+
+    .cartemenu {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+        .carte {
+            width: 45%;
+        }
+    }
+
+
+    .chargement .conteneurbulle {
+        left: 45%;
+        width: 200px;
+      }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+
+
+    .explorer {
+        padding-bottom: 3%;
+    }
+
+    .cartemenu {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+        .carte {
+            width: 45%;
+        }
+    }
+
+
+    .chargement .conteneurbulle {
+        left: 35%;
+        width: 200px;
+    }
+    
 }

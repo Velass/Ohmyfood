@@ -19,52 +19,23 @@
     }
 }
 
-div.menu:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+.conteneurvignette > div:nth-child(1) {
     animation: apparition 1s ease;
 }
 
-div.menu:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
-    animation: apparition 1s ease;
-    animation-delay: 0.1s;
+.conteneurvignette > div:nth-child(2) {
+    animation: apparition 1.5s ease;
 }
 
-div.menu:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
-    animation: apparition 1s ease;
-    animation-delay: 0.2s;
+.conteneurvignette > div:nth-child(3) {
+    animation: apparition 2s ease;
 }
 
-div.menu:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
-    animation: apparition 1s ease;
-    animation-delay: 0.3s;
+.conteneurvignette > div:nth-child(4) {
+    animation: apparition 2.5s ease;
 }
 
-div.menu:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
-    animation: apparition 1s ease;
-    animation-delay: 0.4s;
-}
-
-div.menu:nth-child(3) > div:nth-child(2) > div:nth-child(3) {
-    animation: apparition 1s ease;
-    animation-delay: 0.5s;
-}
-
-div.menu:nth-child(4) > div:nth-child(2) > div:nth-child(1) {
-    animation: apparition 1s ease;
-    animation-delay: 0.6s;
-}
-
-div.menu:nth-child(4) > div:nth-child(2) > div:nth-child(2) {
-    animation: apparition 1s ease;
-    animation-delay: 0.7s;
-}
-
-div.menu:nth-child(4) > div:nth-child(2) > div:nth-child(3) {
-    animation: apparition 1s ease;
-    animation-delay: 0.8s;
-}
-
-   
-
+ 
 h1{
     font-family: "shrikhand" , sans-serif;
 }
@@ -75,6 +46,7 @@ h3{
 
 p{
     font-family: 'roboto', Arial, sans-serif;
+    font-weight: lighter;
 }
 
 a{
@@ -166,6 +138,7 @@ nav{
         border-radius: 10px;
         overflow: hidden;
         margin-bottom: 15px;
+        font-family: 'roboto', Arial, sans-serif;
 
         &:hover .valide{
             margin-right: 0px;
@@ -325,6 +298,7 @@ nav{
     transition: 0.3s;
 }
 
-@media (min-width: 500px){
+@media (min-width: 800px){
+
 
 }
