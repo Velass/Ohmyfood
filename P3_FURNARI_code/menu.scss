@@ -63,14 +63,15 @@ body{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
-    width: 75%;
+    justify-content: center;
+    width: 100%;
 
 }
 
 nav{
 
-    margin-left: 5%;
+    position: absolute;
+    left: 5%;
 
     a{
         text-decoration: none;
@@ -298,7 +299,91 @@ nav{
     transition: 0.3s;
 }
 
-@media (min-width: 800px){
+@media (min-width: 900px){
+    .conteneurvignette{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 
+        .vignette{
+            width: 100%;
+
+            .valide{
+
+                .confirmation{
+                    padding: 30px 20px 30px 20px;
+                }
+            }
+            .note{
+                width: 90%;
+
+                h4{
+                    font-size: 16px;
+                }
+
+                p{
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
+
+    .conteneurmenu{
+        .menu{
+            display: flex;
+            flex-direction: column;
+            width: 31%; 
+        }
+        .restaurant h2 {
+            width: 90%;
+            text-align: center;
+        }
+        .lesmenu{
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    .bouton button{
+        padding: 15px 100px;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+
+    .conteneurmenu{ 
+        
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3{
+                width: 10%;
+            }
+        }
+    }
+
+    .conteneurvignette{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .vignette{
+            width: 85%;
+
+            .valide{
+                width: 25%;
+            }
+        }
+    }
+
+    .bouton button{
+        padding: 15px 50px;
+    }
 
 }

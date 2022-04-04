@@ -308,7 +308,7 @@ header h1 {
   background-color: none;
 }
 
-@media (min-width: 801px) {
+@media (min-width: 900px) {
   .explorer {
     padding-bottom: 3%;
   }
@@ -339,7 +339,7 @@ header h1 {
     width: 200px;
   }
 }
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 500px) and (max-width: 900px) {
   .explorer {
     padding-bottom: 3%;
   }
@@ -357,6 +357,10 @@ header h1 {
   .chargement .conteneurbulle {
     left: 35%;
     width: 200px;
+  }
+
+  .note h3 {
+    font-size: large;
   }
 }
 

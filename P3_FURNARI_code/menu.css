@@ -60,12 +60,13 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-between;
-  width: 75%;
+  justify-content: center;
+  width: 100%;
 }
 
 nav {
-  margin-left: 5%;
+  position: absolute;
+  left: 5%;
 }
 nav a {
   text-decoration: none;
@@ -253,6 +254,74 @@ nav a {
   width: 100%;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), #ff79da);
   transition: 0.3s;
+}
+
+@media (min-width: 900px) {
+  .conteneurvignette {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .conteneurvignette .vignette {
+    width: 100%;
+  }
+  .conteneurvignette .vignette .valide .confirmation {
+    padding: 30px 20px 30px 20px;
+  }
+  .conteneurvignette .vignette .note {
+    width: 90%;
+  }
+  .conteneurvignette .vignette .note h4 {
+    font-size: 16px;
+  }
+  .conteneurvignette .vignette .note p {
+    font-size: 15px;
+  }
+
+  .conteneurmenu .menu {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+  }
+  .conteneurmenu .restaurant h2 {
+    width: 90%;
+    text-align: center;
+  }
+  .conteneurmenu .lesmenu {
+    display: flex;
+    width: 100%;
+  }
+
+  .bouton button {
+    padding: 15px 100px;
+  }
+}
+@media (min-width: 500px) and (max-width: 900px) {
+  .conteneurmenu .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteneurmenu .menu h3 {
+    width: 10%;
+  }
+
+  .conteneurvignette {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteneurvignette .vignette {
+    width: 85%;
+  }
+  .conteneurvignette .vignette .valide {
+    width: 25%;
+  }
+
+  .bouton button {
+    padding: 15px 50px;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
