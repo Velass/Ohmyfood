@@ -304,10 +304,6 @@ header h1 {
   transition: 0.3s;
 }
 
-.contour {
-  background-color: none;
-}
-
 @media (min-width: 900px) {
   .explorer {
     padding-bottom: 3%;

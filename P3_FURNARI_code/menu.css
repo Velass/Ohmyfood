@@ -174,7 +174,7 @@ nav a {
   color: white;
   display: flex;
   flex-direction: column;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 .pagefooter h3 {
   margin-left: 15px;
