@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "roboto" ,Arial,sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@keyframes visibiliter {
+    0%{
+        visibility: visible;
+        opacity: 0.9;
+        background-color: white;
+    }
+    100%{
+        visibility: collapse;
+        opacity: 0.9;
+        background-color: white;
+    }
+}
+
+@keyframes mouvement {
+    0%{
+        margin-left: 0%;
+    }
+    25%{
+        margin-left: 50%;
+    }
+    50%{
+        margin-left: 100%;
+    }
+    75%{
+        margin-left: 50%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+    
+}
+
+.chargement {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: collapse;
+    animation: visibiliter 3s ;
+
+    .conteneurbulle {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 40%;
+        width: 150px;
+        height: 200px;
+        left: 30%;
+        
+
+        .bulle1 {
+            width: 30px;
+            height: 30px;
+            background-color: #9356DC;
+            border-radius: 50%;
+            animation: mouvement 3s linear 0s infinite alternate;
+        }
+        
+        .bulle2 {
+            width: 30px;
+            height: 30px;
+            background-color: #FF79DA;
+            border-radius: 50%;
+            animation: mouvement 3s linear 0.5s infinite alternate;
+        }
+
+        .bulle3 {
+            width: 30px;
+            height: 30px;
+            background-color: #99E2D0;
+            border-radius: 50%;
+            animation: mouvement 3s linear 1s infinite alternate;
+        }
+            
+    }
+       
+}
+   
+
+header{
+    text-align: center;
+    font-family: 'Shrikhand',sans-serif;
+    box-shadow: 0px 1px 1px 1px #80808045;
+    position: relative;
+}
+
+header h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+.ville{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000014;
+    font-size: larger;
+    p{
+        margin-left: 15px;
+    }
+}
+
+.explorer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #80808012;
+    padding-bottom: 10%;
+
+    h2{
+    width: 70%;
+    margin-bottom: 0px;
+    }
+
+    p{
+        width: 95%;
+    }
+
+    button{
+        color: white;
+        font-weight: bold;
+        background-image: linear-gradient(to top, rgba(147,86,220,0.9), rgba(255,121,218,09));
+        padding: 15px;
+        border-radius: 50px 50px 50px 50px;
+        box-shadow: 5px 5px 5px #00000017;
+        border: none;
+        font-size: medium;
+    }
+    button:hover{
+        opacity: 0.85;
+        box-shadow: 5px 5px 5px #00000054;
+    }
+    
+}
+
+.fonctionnementsite h2{
+    margin-left: 5%;
+}
+
+.conteneurvignette{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.vignette{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 85%;
+    background-color: #f6f6f6;
+    height: 80px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 4px #0000000d;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9356dc;
+        border-radius: 50%;
+        color: white;
+        margin: 0px 0px 0px -15px;
+        width: 30px;
+        height: 30px;
+
+    }
+    
+    i{
+        margin: 0px 5% 0px 5%;
+        color: grey;
+    }
+
+    h3{
+        opacity: 0.8;
+    }
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 30px 0px 30px 0px;
+
+    h2{
+        margin-left: 5%;
+    }
+
+
+
+}
+
+.cartemenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+   
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    box-shadow: 2px 2px 2px 4px #0000000d;
+
+    img{
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    a{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nouveau{
+        position: absolute;
+        right: 15px;
+        padding: 5px 15px;
+        top: 15px;
+        color: #008766;
+        background-color: #99e2d0;
+    }
+}
+
+.conteneurnote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+
+}
+
+.note{
+
+    h3 {
+        margin: 10px 0px 0px 10px;
+    }
+
+    p{
+        margin: 5px 0px 5px 10px;
+        font-weight: lighter;
+    }
+
+}
+
+.pagefooter{
+    background-color: #353535;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+    h3{
+        margin-left: 15px;
+        font-family: 'Shrikhand',sans-serif;
+        font-size: larger;
+    }
+
+    .footer{
+        margin-left: 15px; 
+    }
+
+    .proposer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
+
+        p{
+            margin: 0px 0px 0px 10px;
+        }
+    }
+
+    .devenir{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p{
+            margin: 0px 0px 0px 10px;
+        }
+    
+    }
+
+}
+.coeur{
+    position: relative;
+    height: 25px;
+    width: 30px;
+    clip-path: polygon(10% 30%, 12.203648567199707% 20.864503860473633%, 18.342300415039062% 13.747163772583008%, 27.050838470458984% 10.21597671508789%, 36.412715911865234% 11.050313949584961%, 44.35530090332031% 16.074371337890625%, 49.13557815551758% 24.165807723999023%, 50.313941955566406% 26.451126098632812%, 54.109107971191406% 17.85419464111328%, 61.40908432006836% 11.934037208557129%, 70.60763549804688% 10.009127616882324%, 79.67156219482422% 12.489861488342285%, 86.59993743896484% 18.841064453125%, 89.86367797851562% 27.653247833251953%, 89.43894958496094% 37.10539627075195%, 87.05736541748047% 46.27357482910156%, 83.11544799804688% 54.89182662963867%, 77.99468231201172% 62.87056350708008%, 72.01592254638672% 70.23140716552734%, 65.41331481933594% 77.04036712646484%, 58.349945068359375% 83.3713607788086%, 50.93857955932617% 89.29176330566406%, 43.458309173583984% 84.874755859375%, 36.299747467041016% 78.65148162841797%, 29.56999969482422% 71.96776580810547%, 23.417905807495117% 64.7506103515625%, 18.0579891204834% 56.92971420288086%, 13.78939151763916% 48.467308044433594%, 10.985612869262695% 39.41804504394531%, 10% 30%);
+    &:hover .remplissage{
+        height: 100%;
+    }
+    i.far:nth-child(1) {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin-left: 3px;
+        margin-top: 0.5px;
+        font-size: x-large;
+    }
+    
+}
+
+.remplissage{
+    position: absolute;
+    bottom: 0px;
+    height: 0px;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), #ff79da);
+    transition: 0.3s;
+}
+
+
+@media (min-width: 900px){
+
+
+    .explorer {
+        padding-bottom: 3%;
+    }
+
+    .conteneurvignette {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 40px;
+        justify-content: space-evenly;
+
+        .vignette{
+            width: 30%;
+        }
+    }
+
+    .cartemenu {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+        .carte {
+            width: 45%;
+        }
+    }
+
+
+    .chargement .conteneurbulle {
+        left: 45%;
+        width: 200px;
+      }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+
+
+    .explorer {
+        padding-bottom: 3%;
+    }
+
+    .cartemenu {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+        .carte {
+            width: 45%;
+        }
+    }
+
+
+    .chargement .conteneurbulle {
+        left: 35%;
+        width: 200px;
+    }
+    
+    .note h3 {
+        font-size: large;
+      }
+}

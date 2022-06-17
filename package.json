@@ -1,0 +1,22 @@
+{
+  "name": "p3_furnari_code",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ohmyfood.scss ohmyfood.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Velass/ohmyfood.git"
+  },
+  "author": "FURNARI Florian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Velass/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Velass/ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
